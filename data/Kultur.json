@@ -1,1 +1,263 @@
-{"displayFieldName":"","fieldAliases":{"OBJECTID":"OBJECTID","Navn":"Navn","Type":"Type","Beskrivelse":"Beskrivelse","Adresse":"Adresse","Hjemmeside":"Hjemmeside","Hovedkategori":"Hovedkategori","Underkategori":"Underkategori","Tilleggskategori":"Tilleggskategori"},"geometryType":"esriGeometryPoint","spatialReference":{"wkid":32632,"latestWkid":32632},"fields":[{"name":"OBJECTID","type":"esriFieldTypeOID","alias":"OBJECTID"},{"name":"Navn","type":"esriFieldTypeString","alias":"Navn","length":500},{"name":"Type","type":"esriFieldTypeString","alias":"Type","length":500},{"name":"Beskrivelse","type":"esriFieldTypeString","alias":"Beskrivelse","length":5000},{"name":"Adresse","type":"esriFieldTypeString","alias":"Adresse","length":500},{"name":"Hjemmeside","type":"esriFieldTypeString","alias":"Hjemmeside","length":5000},{"name":"Hovedkategori","type":"esriFieldTypeString","alias":"Hovedkategori","length":500},{"name":"Underkategori","type":"esriFieldTypeString","alias":"Underkategori","length":500},{"name":"Tilleggskategori","type":"esriFieldTypeString","alias":"Tilleggskategori","length":500}],"features":[{"attributes":{"OBJECTID":1,"Navn":"Kristiansand kino","Type":"Kino","Beskrivelse":null,"Adresse":"Vestre Strandgate 9, 4610 Kristiansand","Hjemmeside":"http://www.nfkino.no/kristiansand/","Hovedkategori":"Kultur","Underkategori":"Kino","Tilleggskategori":null},"geometry":{"x":440809.65390000027,"y":6445060.5308999997}},{"attributes":{"OBJECTID":2,"Navn":"Kilden Teater- og Konserthus","Type":"Konserthus","Beskrivelse":null,"Adresse":"Sjølystveien 2, 4610 Kristiansand","Hjemmeside":"http://www.kilden.com/","Hovedkategori":"Kultur","Underkategori":"Konserthus","Tilleggskategori":null},"geometry":{"x":440916.58650000021,"y":6444650.1917000003}},{"attributes":{"OBJECTID":3,"Navn":"Rosegården Teaterhus","Type":"Teater","Beskrivelse":null,"Adresse":"Teglverksveien 48, 4632 Kristiansand","Hjemmeside":"http://www.rosegardenteaterhus.no/","Hovedkategori":"Kultur","Underkategori":"Teater","Tilleggskategori":null},"geometry":{"x":442799.70359999966,"y":6445622.2038000003}},{"attributes":{"OBJECTID":4,"Navn":"Kilden Teater- og Konserthus","Type":"Teater","Beskrivelse":null,"Adresse":"Sjølystveien 2, 4610 Kristiansand","Hjemmeside":"http://www.kilden.com/","Hovedkategori":"Kultur","Underkategori":"Teater","Tilleggskategori":null},"geometry":{"x":440923.75109999999,"y":6444614.5889999997}},{"attributes":{"OBJECTID":5,"Navn":"Agder Naturmuseum og botaniske hage","Type":"Museum","Beskrivelse":null,"Adresse":"Gimleveien 23, 4686 Kristiansand","Hjemmeside":"http://www.naturmuseum.no/","Hovedkategori":"Kultur","Underkategori":"Museum","Tilleggskategori":null},"geometry":{"x":441373.45880000014,"y":6446822.1886999998}},{"attributes":{"OBJECTID":6,"Navn":"Sørlandets kunstmuseum","Type":"Museum","Beskrivelse":null,"Adresse":"Skippergata 24B,  4666 Kristiansand ","Hjemmeside":"http://skmu.no/","Hovedkategori":"Kultur","Underkategori":"Museum","Tilleggskategori":null},"geometry":{"x":440758.87469999958,"y":6445508.9761999995}},{"attributes":{"OBJECTID":7,"Navn":"Kristiansand Kanonmuseum","Type":"Museum","Beskrivelse":null,"Adresse":"Kroodden, Møvig, 4677 Kristiansand ","Hjemmeside":"http://www.kanonmuseet.no/","Hovedkategori":"Kultur","Underkategori":"Museum","Tilleggskategori":null},"geometry":{"x":439125.0597000001,"y":6439384.4220000003}},{"attributes":{"OBJECTID":8,"Navn":"Bredalsholmen dokk-og fartøyvernsenter","Type":"Museum","Beskrivelse":null,"Adresse":"Andøyveien 188, 4623 Kristiansand","Hjemmeside":"http://www.bredalsholmen.no/","Hovedkategori":"Kultur","Underkategori":"Museum","Tilleggskategori":null},"geometry":{"x":440566.50569999963,"y":6441455.6982000005}},{"attributes":{"OBJECTID":9,"Navn":"Kristiansand museum","Type":"Museum","Beskrivelse":null,"Adresse":"Vigeveien 22B, 4689 Kristiansand","Hjemmeside":"http://www.vestagdermuseet.no/kristiansand/?c_id=7","Hovedkategori":"Kultur","Underkategori":"Museum","Tilleggskategori":null},"geometry":{"x":442887.75930000003,"y":6447177.8189000003}},{"attributes":{"OBJECTID":10,"Navn":"Gimle gård","Type":"Museum","Beskrivelse":null,"Adresse":"Gimleveien 23, 4686 Kristiansand","Hjemmeside":"http://www.vestagdermuseet.no/gimlegard/?c_id=8","Hovedkategori":"Kultur","Underkategori":"Museum","Tilleggskategori":null},"geometry":{"x":441350.48020000011,"y":6446796.1469000001}},{"attributes":{"OBJECTID":11,"Navn":"Odderøya museumshavn ","Type":"Museum","Beskrivelse":null,"Adresse":"Nodeviga 38, 4610 Kristiansand","Hjemmeside":"http://www.vestagdermuseet.no/odderoya/?c_id=92","Hovedkategori":"Kultur","Underkategori":"Museum","Tilleggskategori":null},"geometry":{"x":441136.15950000007,"y":6444797.6392999999}}]}
+{
+    "displayFieldName": "",
+    "fieldAliases": {
+        "OBJECTID": "OBJECTID",
+        "Navn": "Navn",
+        "Type": "Type",
+        "Beskrivelse": "Beskrivelse",
+        "Adresse": "Adresse",
+        "Hjemmeside": "Hjemmeside",
+        "Hovedkategori": "Hovedkategori",
+        "Underkategori": "Underkategori",
+        "Tilleggskategori": "Tilleggskategori"
+    },
+    "geometryType": "esriGeometryPoint",
+    "spatialReference": {
+        "wkid": 32632,
+        "latestWkid": 32632
+    },
+    "fields": [
+        {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+        },
+        {
+            "name": "Navn",
+            "type": "esriFieldTypeString",
+            "alias": "Navn",
+            "length": 500
+        },
+        {
+            "name": "Type",
+            "type": "esriFieldTypeString",
+            "alias": "Type",
+            "length": 500
+        },
+        {
+            "name": "Beskrivelse",
+            "type": "esriFieldTypeString",
+            "alias": "Beskrivelse",
+            "length": 5000
+        },
+        {
+            "name": "Adresse",
+            "type": "esriFieldTypeString",
+            "alias": "Adresse",
+            "length": 500
+        },
+        {
+            "name": "Hjemmeside",
+            "type": "esriFieldTypeString",
+            "alias": "Hjemmeside",
+            "length": 5000
+        },
+        {
+            "name": "Hovedkategori",
+            "type": "esriFieldTypeString",
+            "alias": "Hovedkategori",
+            "length": 500
+        },
+        {
+            "name": "Underkategori",
+            "type": "esriFieldTypeString",
+            "alias": "Underkategori",
+            "length": 500
+        },
+        {
+            "name": "Tilleggskategori",
+            "type": "esriFieldTypeString",
+            "alias": "Tilleggskategori",
+            "length": 500
+        }
+    ],
+    "features": [
+        {
+            "attributes": {
+                "OBJECTID": 1,
+                "Navn": "Kristiansand kino",
+                "Type": "Kino",
+                "Beskrivelse": null,
+                "Adresse": "Vestre Strandgate 9, 4610 Kristiansand",
+                "Hjemmeside": "http://www.nfkino.no/kristiansand/",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Kino",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 440809.65390000027,
+                "y": 6445060.5308999997
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 2,
+                "Navn": "Kilden Teater- og Konserthus",
+                "Type": "Konserthus",
+                "Beskrivelse": null,
+                "Adresse": "Sjølystveien 2, 4610 Kristiansand",
+                "Hjemmeside": "http://www.kilden.com/",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Konserthus",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 440916.58650000021,
+                "y": 6444650.1917000003
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 3,
+                "Navn": "Rosegården Teaterhus",
+                "Type": "Teater",
+                "Beskrivelse": null,
+                "Adresse": "Teglverksveien 48, 4632 Kristiansand",
+                "Hjemmeside": "http://www.rosegardenteaterhus.no/",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Teater",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 442799.70359999966,
+                "y": 6445622.2038000003
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 4,
+                "Navn": "Kilden Teater- og Konserthus",
+                "Type": "Teater",
+                "Beskrivelse": null,
+                "Adresse": "Sjølystveien 2, 4610 Kristiansand",
+                "Hjemmeside": "http://www.kilden.com/",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Teater",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 440923.75109999999,
+                "y": 6444614.5889999997
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 5,
+                "Navn": "Agder Naturmuseum og botaniske hage",
+                "Type": "Museum",
+                "Beskrivelse": null,
+                "Adresse": "Gimleveien 23, 4686 Kristiansand",
+                "Hjemmeside": "http://www.naturmuseum.no/",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Museum",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 441373.45880000014,
+                "y": 6446822.1886999998
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 6,
+                "Navn": "Sørlandets kunstmuseum",
+                "Type": "Museum",
+                "Beskrivelse": null,
+                "Adresse": "Skippergata 24B,  4666 Kristiansand ",
+                "Hjemmeside": "http://skmu.no/",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Museum",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 440758.87469999958,
+                "y": 6445508.9761999995
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 7,
+                "Navn": "Kristiansand Kanonmuseum",
+                "Type": "Museum",
+                "Beskrivelse": null,
+                "Adresse": "Kroodden, Møvig, 4677 Kristiansand ",
+                "Hjemmeside": "http://www.kanonmuseet.no/",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Museum",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 439125.0597000001,
+                "y": 6439384.4220000003
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 8,
+                "Navn": "Bredalsholmen dokk-og fartøyvernsenter",
+                "Type": "Museum",
+                "Beskrivelse": null,
+                "Adresse": "Andøyveien 188, 4623 Kristiansand",
+                "Hjemmeside": "http://www.bredalsholmen.no/",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Museum",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 440566.50569999963,
+                "y": 6441455.6982000005
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 9,
+                "Navn": "Kristiansand museum",
+                "Type": "Museum",
+                "Beskrivelse": null,
+                "Adresse": "Vigeveien 22B, 4689 Kristiansand",
+                "Hjemmeside": "http://www.vestagdermuseet.no/kristiansand/?c_id=7",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Museum",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 442887.75930000003,
+                "y": 6447177.8189000003
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 10,
+                "Navn": "Gimle gård",
+                "Type": "Museum",
+                "Beskrivelse": null,
+                "Adresse": "Gimleveien 23, 4686 Kristiansand",
+                "Hjemmeside": "http://www.vestagdermuseet.no/gimlegard/?c_id=8",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Museum",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 441350.48020000011,
+                "y": 6446796.1469000001
+            }
+        },
+        {
+            "attributes": {
+                "OBJECTID": 11,
+                "Navn": "Odderøya museumshavn ",
+                "Type": "Museum",
+                "Beskrivelse": null,
+                "Adresse": "Nodeviga 38, 4610 Kristiansand",
+                "Hjemmeside": "http://www.vestagdermuseet.no/odderoya/?c_id=92",
+                "Hovedkategori": "Kultur",
+                "Underkategori": "Museum",
+                "Tilleggskategori": null
+            },
+            "geometry": {
+                "x": 441136.15950000007,
+                "y": 6444797.6392999999
+            }
+        }
+    ]
+}
