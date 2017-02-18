@@ -1,0 +1,37 @@
+.MobileWrapper {
+    height: 732px;
+    width: 412px;
+    border: solid 1px;
+    background: url("bg.png");
+    background-size: 100%;
+    position:absolute;
+}
+
+.NavBar {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+#demo-menu-lower-left{
+    margin-top: 3%;
+    float:right;
+    color:white;
+}
+
+
+.MobileWrapper .NavBar button {
+    float: left;
+    width: 137px;
+    align-self: center;
+}
+
+.MobileWrapper button {
+    float:left;
+    align-items: left;
+    display:flex;
+}
+
+
+
+
