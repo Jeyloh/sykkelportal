@@ -36,6 +36,11 @@
     display:flex;
 }
 
+.settings {
+    float:right;
+    color:#666;
+}
+
 .circle {
     border-radius: 50%;
     width: 200px;
@@ -49,24 +54,35 @@
 }
 
 .points {
-width: 100%;
-margin:auto;
-text-align: center;
+    width: 100%;
+    margin:auto;
+    text-align: center;
+}
+
+.points2 {
+    margin-top:10%;
+    width: 100%;
+    text-align: center;
+}
+
+.points3  {
+    margin-top:10%;
+    width: 100%;
+    text-align: center;
 }
 
 .material-icons {
-    margin-top:8%;
+    margin-top:12%;
     text-align: center;
 }
 
 .mdl-chip {
-    transform:translateY(1200%);
     width: 50%;
     background-color: teal;
 }
 
 .mdl-chip__contact {
-float:left;
+    float:left;
 }
 
 .mdl-chip__text {
