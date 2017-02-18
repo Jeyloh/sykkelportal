@@ -1,14 +1,14 @@
 $(document).ready(function () {
   var map = new GMaps({
       div: '#map',
-      lat: GetUserX(),
-      lng: GetUserY()
+      lat: 58.1479053,
+      lng: 7.9973585
   });
 
     for (var i = 0; i++; i < 10){
         map.addMarker({
-        lat: -12.043333,
-        lng: -77.028333,
+        lat: 58.1479053,
+        lng: 7.9973585,
         title: 'Lima',
         click: function(e) {
           infoWindow: {
@@ -20,25 +20,6 @@ $(document).ready(function () {
     }
 
 });
-/**
-$.getJSON("./data/Kuldsadtur.json", function(_cultureData) {
-    console.log(_cultureData.features.attributes.Navn);
-});
-
-
-
-var _localCultureMemData = $.getJSON("./data/Lokale_kulturminner.json");
-var _bikemapsData = $.getJSON("./data/Sykkelkart_interessepunkt.json");
-var _stationsData = $.getJSON("./data/sykkelstasjoner.json");
-// get data from ./data/Lokale_kulturminner.json -> features.geometry.x && features.geometry.y
-
-
-    features[0].attributes.Navn = "GILLSVANNET 32 C3.1"
-    features[0].features.x = 442577
-    features[0].features.y = 6449945
-
-    for
-*/
 
 var POI_list = [];
 var POI_by_distance = [];
@@ -62,7 +43,6 @@ function updateBikeMapPOI() {
 
 
 function updateCulturePOI() {
-    debugger;
 
     $.getJSON( "./data/Kultur.json", function( data ) {
 
@@ -100,7 +80,7 @@ function updateCultureMemoryPOI() {
 }
 
 // Get User's Coordinate from their Browser
-window.onload = function() {
+function LinkGeoData() {
   // HTML5/W3C Geolocation
   if (navigator.geolocation) {
       updateCulturePOI();

@@ -27,54 +27,69 @@
 
           <div class="content">
 
-            <div class="circle"></div>
+            <div class="bike"></div>
 
 
               <form action="#">
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                   <input class="mdl-textfield__input" type="text" id="sample3">
-                  <label class="mdl-textfield__label" for="sample3">Jørgen</label>
+                  <label class="mdl-textfield__label" for="sample3">Serienummer XXXXX</label>
                 </div>
               </form>
 
 
               <div class="points">
           <div>
-              <span class="mdl-chip mdl-chip--contact">
-                    <span class="mdl-chip__contact mdl-color--red mdl-color-text--white"><i class="material-icons">stars</i></span>
-                    <span class="mdl-chip__text">1734 poeng</span>
-              </span>
-          </div>
-
-          <div>
-            <span class="mdl-chip mdl-chip--contact">
-                <span class="mdl-chip__contact mdl-color--red mdl-color-text--white"><i class="material-icons">subdirectory_arrow_right</i></span>
-                <span class="mdl-chip__text">7 turer</span>
-            </span>
-          </div>
-
-          <div>
             <span class="mdl-chip mdl-chip--contact">
                 <span class="mdl-chip__contact mdl-color--red mdl-color-text--white"><i class="material-icons">swap_vertical_circle</i></span>
-                <span class="mdl-chip__text">22 kilometer</span>
+                <span class="mdl-chip__text">284 turer</span>
             </span>
           </div>
 
           <div>
-            <a  class="mdl-chip mdl-chip--contact" href="Bike.html">
-                <span class="mdl-chip__contact mdl-color--red mdl-color-text--white"><i class="material-icons">directions_bike</i></span>
-                <span class="mdl-chip__text">Vis din sykkel</span>
-            </a>
+            <span class="mdl-chip mdl-chip--contact">
+                <span class="mdl-chip__contact mdl-color--red mdl-color-text--white"><i class="material-icons">whatshot</i></span>
+                <span class="mdl-chip__text">726 kilometer</span>
+            </span>
           </div>
         </div>
+    </div>
+    <div class="danger-button">
+      <button id="show-dialog" type="button" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
+          <i class="material-icons">warning</i>
+      </button>
+
+      <dialog class="mdl-dialog">
+    <h4 class="mdl-dialog__title">Er sykkelen skadd?</h4>
+    <div class="mdl-dialog__actions">
+      <button type="button" class="mdl-button">Nei</button>
+      <button type="button" class="mdl-button close">Ja</button>
+    </div>
+  </dialog>
+  <script>
+    var dialog = document.querySelector('dialog');
+    var showDialogButton = document.querySelector('#show-dialog');
+    if (! dialog.showModal) {
+      dialogPolyfill.registerDialog(dialog);
+    }
+    showDialogButton.addEventListener('click', function() {
+      dialog.showModal();
+    });
+    dialog.querySelector('.close').addEventListener('click', function() {
+      dialog.close();
+    });
+  </script>
+      </div>
+      <p>
+        Rapporter skader på sykkel.
+        </p>
 
 
-        </div>
         <navbar class="navbar">
                 <a class="mdl-navigation__link menubtn" href="Profile.html"><i class="material-icons">account_box</i></a>
                 <a class="mdl-navigation__link menubtn" href="Home.html"><i class="material-icons">home</i></a>
                 <a class="mdl-navigation__link menubtn" href="explore.html"><i class="material-icons">explore</i></a>
-            </navbar>
+        </navbar>
     </div>
-</body>
+  </body>
 </html>
