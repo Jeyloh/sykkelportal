@@ -179,3 +179,39 @@ body,
 .login-form div input {
     color: white;
 }
+
+
+/* Explore tab specific */
+.test {
+  background-color: black;
+}
+
+.exploreContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.slideShow {
+  height: 13em;
+  width: 25em;
+  margin: 3em;
+}
+
+.exploreBlocks {
+  display: flex;
+}
+
+.exploreBlock {
+  height: 11em;
+  width: 11em;
+  margin: 0em 0em 3em 3em;
+}
+
+li {
+  background-color: black;
+  width: 25em;
+  height: 5em;
+  margin: 0em 0em 3em 0em;
+}

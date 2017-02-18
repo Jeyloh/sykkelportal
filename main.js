@@ -1,8 +1,8 @@
 $(document).ready(function () {
   var map = new GMaps({
       div: '#map',
-      lat: -12.043333,
-      lng: -77.028333
+      lat: GetUserX(),
+      lng: GetUserY()
   });
 
     for (var i = 0; i++; i < 10){
@@ -15,24 +15,24 @@ $(document).ready(function () {
             content: '<p>HTML Content</p>'
           }
         }
-
         });
 
     }
 
 });
-
+/**
 $.getJSON("./data/Kuldsadtur.json", function(_cultureData) {
     console.log(_cultureData.features.attributes.Navn);
 });
 
+
+
 var _localCultureMemData = $.getJSON("./data/Lokale_kulturminner.json");
-console.log(_localCultureMemData.features.attributes.Navn);
 var _bikemapsData = $.getJSON("./data/Sykkelkart_interessepunkt.json");
 var _stationsData = $.getJSON("./data/sykkelstasjoner.json");
 // get data from ./data/Lokale_kulturminner.json -> features.geometry.x && features.geometry.y
 
-/**
+
     features[0].attributes.Navn = "GILLSVANNET 32 C3.1"
     features[0].features.x = 442577
     features[0].features.y = 6449945
@@ -45,52 +45,58 @@ var POI_by_distance = [];
 var currentPosition;
 
 function updateBikeMapPOI() {
-    var sykkelkart_data = "./data/Sykkelkart_interessepunkt.json";
-    for(var bikeMap in sykkelkart_data.features){
+    $.getJSON( "./data/Sykkelkart_interessepunkt.json", function( data ) {
+        for(var bikeMap in data.features){
 
-        var bikeMapObject = {
-            x: bikeMap.geometry.x,
-            y: bikeMap.geometry.y,
-            route: bikeMap.attributes.Rute,
-            desc: bikeMap.attributes.Beskrivelse,
-            distance: null,
+            var bikeMapObject = {
+                x: bikeMap.geometry.x,
+                y: bikeMap.geometry.y,
+                route: bikeMap.attributes.Rute,
+                desc: bikeMap.attributes.Beskrivelse,
+                distance: null,
+            }
+            POI_list.push(bikeMapObject);
         }
-        POI_list.push(bikeMapObject);
-    }
-    return bike_POI_list;
+    });
 }
 
 
 function updateCulturePOI() {
-    var kultur_data = "./data/Kultur.json";
-    for(var culturePOI in kultur_data.features){
+    debugger;
 
-        var cultureObject = {
-            x: culturePOI.geometry.x,
-            y: culturePOI.geometry.y,
-            name: culturePOI.attributes.Navn,
-            type: culturePOI.attributes.Type,
-            desc: culturePOI.attributes.Beskrivelse,
-            homepage: culturePOI.attributes.Hjemmeside,
-            category: culturePOI.attributes.Hovedkategori,
-            distance: null,
+    $.getJSON( "./data/Kultur.json", function( data ) {
+
+        for(var culturePOI in data.features){
+            console.log(data);
+
+            var cultureObject = {
+                x: culturePOI.geometry.x,
+                y: culturePOI.geometry.y,
+                name: culturePOI.attributes.Navn,
+                type: culturePOI.attributes.Type,
+                desc: culturePOI.attributes.Beskrivelse,
+                homepage: culturePOI.attributes.Hjemmeside,
+                category: culturePOI.attributes.Hovedkategori,
+                distance: null,
+            }
+            POI_list.push(cultureObject);
         }
-        POI_list.push(cultureObject);
-    }
+    });
 }
 
 function updateCultureMemoryPOI() {
-    var cm_data = "./data/Lokale_kulturminner.json";
-    for(var cultureMemories in cm_data.features){
-        var cultureMemoryObject = {
-            x: cultureMemories.geometry.x,
-            y: cultureMemories.geometry.y,
-            name: cultureMemories.attributes.Navn,
-            desc: cultureMemories.attributes.Beskrivelse,
-            distance: null,
+    $.getJSON( "./data/Lokale_kulturminner.json", function( data ) {
+        for(var cultureMemories in data.features){
+            var cultureMemoryObject = {
+                x: cultureMemories.geometry.x,
+                y: cultureMemories.geometry.y,
+                name: cultureMemories.attributes.Navn,
+                desc: cultureMemories.attributes.Beskrivelse,
+                distance: null,
+            }
+            POI_list.push(cultureMemoryObject);
         }
-        POI_list.push(cultureMemoryObject);
-    }
+    });
 }
 
 // Get User's Coordinate from their Browser
@@ -166,10 +172,6 @@ function sort_POI_by_distance() {
 function sortNumber(a,b) {
     return a - b;
 }
-
-var numArray = [140000, 104, 99];
-numArray.sort(sortNumber);
-alert(numArray.join(","));
 
 
 function GetUserX(position) {
