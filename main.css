@@ -1,13 +1,18 @@
-.MobileWrapper {
+.mobilewrapper {
     height: 732px;
     width: 412px;
     border: solid 1px;
-    background: url("bg.png");
-    background-size: 100%;
-    position:absolute;
 }
 
-.NavBar {
+.screenwrapper {
+    background: url("bg.png");
+    background-size: 100%;
+    height:100%;
+    width: inherit;
+    position: absolute;
+}
+
+.navbar {
     position: absolute;
     bottom: 0%;
     width: 100%;
@@ -20,16 +25,65 @@
 }
 
 
-.MobileWrapper .NavBar button {
+.mobilewrapper .navbar button {
     float: left;
     width: 137px;
-    align-self: center;
 }
 
-.MobileWrapper button {
+.mobilewrapper button {
     float:left;
     align-items: left;
     display:flex;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: url("lyb.png") center;
+    background-size:100%;
+    margin-left:25%;
+    margin-top: 15%;
+    display:flex;
+    box-shadow: 5px 5px 50px black;
+}
+
+.points {
+width: 100%;
+margin:auto;
+text-align: center;
+}
+
+.material-icons {
+    margin-top:8%;
+    text-align: center;
+}
+
+.mdl-chip {
+    transform:translateY(1200%);
+    width: 50%;
+    background-color: teal;
+}
+
+.mdl-chip__contact {
+float:left;
+}
+
+.mdl-chip__text {
+    font-size: 20px;
+}
+
+.mdl-textfield {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mdl-textfield__label {
+    color:white;
+    opacity: 0.6;
+    text-align: center;
 }
 
 
