@@ -1,0 +1,69 @@
+{
+    "bikedepots": [
+        {
+            "name": "Tog Stasjon",
+            "lat": 58.145351,
+            "long": 7.988179
+        },
+        {
+            "name": " Bystranda",
+            "lat": 58.147101,
+            "long": 8.007575
+        },
+        {
+            "name": "Vaktbua",
+            "lat": 58.141858,
+            "long": 7.996814
+        },
+        {
+            "name": "Elevegata N",
+            "lat": 58.151701,
+            "long": 7.996655
+        },
+        {
+            "name": "Ravndalen",
+            "lat": 58.155903,
+            "long": 7.975079
+        },
+        {
+            "name": "Gimlemoen ",
+            "lat": 58.161573,
+            "long": 7.999782
+        },
+        {
+            "name": "UIA",
+            "lat": 58.163659,
+            "long": 8.003896
+        },
+        {
+            "name": "Spicheren",
+            "lat": 58.162809,
+            "long": 8.008735
+        },
+        {
+            "name": "Oddernes Kirke",
+            "lat": 58.158631,
+            "long": 8.012304
+        },
+        {
+            "name": "Lund broa N",
+            "lat": 58.150632,
+            "long": 8.006241
+        },
+        {
+            "name": "Roligheten",
+            "lat": 58.149699,
+            "long": 8.026977
+        },
+        {
+            "name": "Sor Arena",
+            "lat": 58.154104,
+            "long": 8.026887
+        },
+        {
+            "name": "Paskebjerg",
+            "lat": 58.163687,
+            "long": 7.99253
+        }
+    ]
+}
