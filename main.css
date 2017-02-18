@@ -1,3 +1,10 @@
+/*  Scaffolding */
+html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit;
+list-style:none; }
+body { background-color: #f5f5f5; color: #333; font-size: 14px;
+font-family: Verdana, Arial, sans-serif; line-height: 20px; margin: 0;}
+a { text-decoration: none; transition: all 0.3s linear 0s; }
+
 .MobileWrapper {
     height: 732px;
     width: 412px;
@@ -19,7 +26,6 @@
     color:white;
 }
 
-
 .MobileWrapper .NavBar button {
     float: left;
     width: 137px;
@@ -32,6 +38,52 @@
     display:flex;
 }
 
+.mobile-wrapper {
+    width: 610px;
+    height: 1138px;
+}
 
+.login-wrapper {
+    width: inherit;
+    height: inherit;
+    background: #666;
+    padding: 2em;
 
+}
 
+.title-header {
+    color: #d9d9d9;
+    font-weight: 100;
+    font-variant: small-caps;
+    text-align:center;
+    margin-bottom: 5em;
+}
+
+.login-label {
+    color: #d9d9d9;
+    font-weight: 200;
+}
+
+.login-form {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.forgot {
+    text-align:center;
+    margin-bottom: 5em;
+    
+}
+.white-opaque {
+    color: rgba(255, 255, 255, 0.5);
+}
+.login-form > div, .login-form > button {
+    width: 60%;
+    margin-bottom: 2em;
+
+}
+.login-form div input {
+    color: white;
+}
