@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*  Scaffolding */
 html { box-sizing: border-box; } *, *:before, *:after { box-sizing: inherit;
 list-style:none; }
@@ -5,20 +6,46 @@ body { background-color: #f5f5f5; color: #333; font-size: 14px;
 font-family: Verdana, Arial, sans-serif; line-height: 20px; margin: 0;}
 a { text-decoration: none; transition: all 0.3s linear 0s; }
 
-.MobileWrapper {
-    height: 732px;
-    width: 412px;
-    border: solid 1px;
-    background: url("bg.png");
-    background-size: 100%;
-    position:absolute;
+
+.mobile-wrapper {
+    width: 610px;
+    height: 1138px;
 }
 
-.NavBar {
-    position: absolute;
-    bottom: 0%;
-    width: 100%;
+.profile-wrapper {
+    background: url("./bg.png");
+    background-size: 120%;
+    background-repeat: no-repeat;
+
+    height:inherit;
+    width: inherit;
+
 }
+
+.navbar {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: inherit;
+    height: 5em;
+    position:fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    text-align: center;
+
+}
+.navbar * {
+    flex-grow: 1;
+}
+
+.navbar .menubtn {
+    padding: 2em;
+    width: 32%;
+    height: inherit;
+    color: white;
+}
+
 
 #demo-menu-lower-left{
     margin-top: 3%;
@@ -26,21 +53,10 @@ a { text-decoration: none; transition: all 0.3s linear 0s; }
     color:white;
 }
 
-.MobileWrapper .NavBar button {
-    float: left;
-    width: 137px;
-    align-self: center;
-}
-
-.MobileWrapper button {
+.mobile-wrapper button {
     float:left;
     align-items: left;
     display:flex;
-}
-
-.mobile-wrapper {
-    width: 610px;
-    height: 1138px;
 }
 
 .login-wrapper {
@@ -48,8 +64,58 @@ a { text-decoration: none; transition: all 0.3s linear 0s; }
     height: inherit;
     background: #666;
     padding: 2em;
-
 }
+.circle {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: url("lyb.png") center;
+    background-size:100%;
+    margin-left:25%;
+    margin-top: 15%;
+    display:flex;
+    box-shadow: 5px 5px 50px black;
+}
+
+.points {
+    width: 100%;
+    margin:auto;
+    text-align: center;
+}
+
+.material-icons {
+    margin-top:8%;
+    text-align: center;
+}
+
+.mdl-chip {
+    transform:translateY(1200%);
+    width: 50%;
+    background-color: teal;
+}
+
+.mdl-chip__contact {
+float:left;
+}
+
+.mdl-chip__text {
+    font-size: 20px;
+}
+
+.mdl-textfield {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mdl-textfield__label {
+    color:white;
+    opacity: 0.6;
+    text-align: center;
+}
+
+
 
 .title-header {
     color: #d9d9d9;
@@ -74,7 +140,7 @@ a { text-decoration: none; transition: all 0.3s linear 0s; }
 .forgot {
     text-align:center;
     margin-bottom: 5em;
-    
+
 }
 .white-opaque {
     color: rgba(255, 255, 255, 0.5);
