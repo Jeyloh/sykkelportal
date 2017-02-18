@@ -1,13 +1,13 @@
 $(document).ready(function () {
   var map = new GMaps({
       div: '#map',
-      lat: -12.043333,
-      lng: -77.028333
+      lat: 58.1479053,
+      lng: 7.9973585
   });
 
   map.addMarker({
-    lat: -12.043333,
-    lng: -77.028333,
+    lat: 58.1479053,
+      lng: 7.9973585,
     title: 'Lima',
     click: function(e) {
       infoWindow: {
