@@ -29,10 +29,18 @@ body,
     background: url("./bg.png");
     background-size: 120%;
     background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     height:inherit;
     width: inherit;
-
 }
+
+
+
+
 
 .navbar {
     bottom: 0;
@@ -71,43 +79,50 @@ body,
     display:flex;
 }
 
+
 .login-wrapper {
     width: inherit;
     height: inherit;
     background: #666;
     padding: 2em;
 }
+
 .circle {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background: url("lyb.png") center;
     background-size:100%;
-    margin-left:25%;
-    margin-top: 15%;
-    display:flex;
     box-shadow: 5px 5px 50px black;
+    margin-top: 20%;
+    z-index: 1;
 }
 
 .points {
     width: 100%;
     margin:auto;
     text-align: center;
+    margin-top:25%;
+}
+
+.points div {
+    width: 100%;
+    margin-bottom: 2em;
 }
 
 .material-icons {
-    margin-top:8%;
+    margin-top:12%;
     text-align: center;
 }
 
 .mdl-chip {
-    transform:translateY(1200%);
-    width: 50%;
+    width: 100%;
     background-color: teal;
+    text-align: center;
 }
 
 .mdl-chip__contact {
-float:left;
+    float:left;
 }
 
 .mdl-chip__text {
@@ -115,7 +130,7 @@ float:left;
 }
 
 .mdl-textfield {
-    width: 50%;
+    width: 100%;
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -126,7 +141,6 @@ float:left;
     opacity: 0.6;
     text-align: center;
 }
-
 
 
 .title-header {
